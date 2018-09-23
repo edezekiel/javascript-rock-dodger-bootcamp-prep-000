@@ -58,7 +58,7 @@ function createRock(x) {
 function endGame() {
 
    //End the game by clearing `gameInterval`,
-   clearInterval(gameInterval);
+   clearInterval('gameInterval');
    //removing all ROCKS from the DOM,
    $("div").removeClass(".rock");
    //and removing the `moveDodger` event listener.
