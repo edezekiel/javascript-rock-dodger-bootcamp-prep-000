@@ -63,9 +63,9 @@ function endGame() {
    //End the game by clearing `gameInterval`,
    clearInterval(gameInterval)
    //removing all ROCKS from the DOM,
-
-   //and removing the `moveDodger` event listener.
    $("div").removeClass(".rock");
+   //and removing the `moveDodger` event listener.
+   window.removeEventListener("keydown", moveDodger());
    //Finally, alert "YOU LOSE!" to the player.
    alert("YOU LOSE!")
 
