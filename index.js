@@ -42,15 +42,14 @@ function createRock(x) {
 
   function moveRock() {
      if (checkCollision()) {
-       endGame()
+       endGame();
 
      } else if (top < 360){
-       top = `${top += 2}px`
-       window.requestAnimationFrame(moveRock)
+       top = `${top += 2}px`;
+       window.requestAnimationFrame(moveRock);
 
    } else if (top > 358){
-
-//remove rock
+     $( "rock" ).remove();
     }
   }
 
