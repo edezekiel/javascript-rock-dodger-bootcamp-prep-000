@@ -11,7 +11,6 @@ var gameInterval = null
 ///DONT EDIT ABOVE THIS line
 
 
-
 function checkCollision(rock) {
   const top = positionToInteger(rock.style.top)
   if (top > 360) {
