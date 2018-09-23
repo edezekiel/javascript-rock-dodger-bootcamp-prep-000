@@ -48,7 +48,7 @@ function createRock(x) {
        window.requestAnimationFrame(moveRock);
 
    } else if (top > 358){
-     $( "rock" ).remove();
+     $( ".rock" ).remove();
     }
   }
 
@@ -65,7 +65,7 @@ function endGame() {
    //removing all ROCKS from the DOM,
 
    //and removing the `moveDodger` event listener.
-
+   $("div").removeClass(".rock");
    //Finally, alert "YOU LOSE!" to the player.
    alert("YOU LOSE!")
 
