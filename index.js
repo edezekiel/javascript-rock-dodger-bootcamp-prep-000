@@ -46,21 +46,16 @@ function createRock(x) {
 
      } else if (rocks.style.top < 360){
        rock.style.top = `${top += 2}px`
+       window.requestAnimationFrame(moveRock)
 
    } else if (rocks.style.top > 358){
-      ROCKS
+      
 //remove rock
     }
   }
+
   window.requestAnimationFrame(moveRock)
-
-  // We should kick of the animation of the rock around here
-
-  // Add the rock to ROCKS so that we can remove all rocks
-  // when there's a collision
   ROCKS.push(rock)
-
-  // Finally, return the rock element you've created
   return rock
 }
 
