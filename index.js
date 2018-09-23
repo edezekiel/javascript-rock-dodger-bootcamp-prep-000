@@ -45,11 +45,14 @@ function createRock(x) {
        endGame()
 
      } else if (rocks.style.top < 360){
+       rock.style.top = `${top += 2}px`
 
-   } else if (rocks.style.top >= 360){
+   } else if (rocks.style.top > 358){
+      ROCKS
 //remove rock
     }
   }
+  window.requestAnimationFrame(moveRock)
 
   // We should kick of the animation of the rock around here
 
