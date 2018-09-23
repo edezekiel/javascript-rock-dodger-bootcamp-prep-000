@@ -55,16 +55,16 @@ function createRock(x) {
 }
 
 
-function endGame() {
-
-   //End the game by clearing `gameInterval`,
-   clearInterval('gameInterval');
-   //removing all ROCKS from the DOM,
-   $(".rock").remove()
-}
-   window.removeEventListener("keydown", moveDodger);
-   alert("YOU LOSE!");
-}
+// function endGame() {
+//
+//    //End the game by clearing `gameInterval`,
+//    clearInterval('gameInterval');
+//    //removing all ROCKS from the DOM,
+//    $(".rock").remove()
+// }
+//    window.removeEventListener("keydown", moveDodger);
+//    alert("YOU LOSE!");
+// }
 
 function moveDodger(e) {
   if (e.which === LEFT_ARROW) {
