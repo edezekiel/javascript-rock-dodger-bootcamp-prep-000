@@ -60,7 +60,7 @@ function endGame() {
    //End the game by clearing `gameInterval`,
    clearInterval('gameInterval');
    //removing all ROCKS from the DOM,
-ROCKS.length = 0;
+   ROCKS.length = 0;
 
    window.removeEventListener("keydown", moveDodger);
    alert("YOU LOSE!");
